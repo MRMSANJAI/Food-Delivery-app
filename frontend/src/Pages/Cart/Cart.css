@@ -1,0 +1,17 @@
+.cart{
+    margin-top: 100px;
+}
+.cartitems-title{
+    display: grid;
+    grid-template-columns: 1fr 1.5fr 1fr 1fr 1fr 0.5fr;
+    align-items: center;
+    color: grey;
+    font-size: max(1vw,12px);
+}
+.cartitems-items{
+    margin: 10px 0px;
+    color: black;
+}
+.cartitems-items img{
+    width: 50px;
+}
