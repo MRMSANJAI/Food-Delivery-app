@@ -8,7 +8,9 @@ import {Route, Routes} from'react-router-dom'
 import { ToastContainer} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
-const App = () => {
+const App = ({url}) => {
+
+  
   return (
     <div>
       <ToastContainer/>
@@ -17,9 +19,9 @@ const App = () => {
      <div className="app-content">
       <Sidebar/>
       <Routes>
-        <Route path='/add' element={<Added/>}/>
-        <Route path='/list' element={<List/>}/>
-        <Route path='/order' element={<Order/>}/>
+        <Route path='/add' element={<Added url={url}/>}/>
+        <Route path='/list' element={<List  url={url}/>}/>
+        <Route path='/order' element={<Order  url={url}/>}/>
       </Routes>
      </div>
     </div>
