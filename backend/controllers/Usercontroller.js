@@ -13,8 +13,9 @@ const loginUser = async(req,res)=>{
          return res.json({success: false, message:"User not found"})
       }
 
-      
+
     } catch(error){
+      
 
     }
 
